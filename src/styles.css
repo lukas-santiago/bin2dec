@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: #1b262c;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 130%;
+}
+
+.wrapper {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	border: 3px solid rgb(50 130 184 / 50%);
+	border-radius: 5px;
+	box-shadow: 0 0 10px black;
+	width: 70%;
+	min-width: 300px;
+	/* height: 50%; */
+	min-height: 50%;
+    padding: 20px;
+    margin: 20px;
+
+	display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+.card > span {
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+.card-content {
+	display: grid;
+	grid-template-rows: 30px 2fr auto;
+}
+
+.append {
+	display: grid;
+    grid-template-columns: 1fr auto;
+}
+.append > input {
+	padding: 0 10px;
+	margin: 0;
+	border: none;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.append input {
+	width: auto;
+}
+.append input:focus {
+	width: auto;
+	border: none;
+	outline: none;
+}
+.append button {
+	padding: 0 15px;
+	background: white;
+	margin: 0;
+	border: none;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	transition: 0.2s;
+}
+.append button:hover {
+	/* display: flex; */
+	background: #bbe1fa;
+	margin: 0;
+	border: none;
+}
+.append button:focus {
+	/* display: flex; */
+	background: #3282b8;
+	margin: 0;
+	border: none;
+	outline: none;
+}
+
+.exit {
+	background-color: rgb(0 0 0 / 80%);
+	margin: 15px 0 0 0;
+    padding: 10px;
+    min-height: 4em;
+}
+.exit code {
+    display: block;
+    font-size: 80%;
+}
+
+#result {
+	font-size: 2em;
+}
