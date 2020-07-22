@@ -1,0 +1,20 @@
+{
+  "name": "bin2dec",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "jest": "^26.1.0"
+  },
+  "scripts": {
+    "babel": "./node_modules/.bin/babel src --out-dir lib",
+    "test": "yarn jest"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5"
+  }
+}
