@@ -1,5 +1,4 @@
 const binary2decimal = (entry) => {
-	// Deve haver validação aqui
 	let bin = '',
 		dot = 0,
 		result = 0,
@@ -44,9 +43,15 @@ const ValidateInput = (test) => {
 };
 
 const Convert = () => {
-	let entry = document.getElementById('entryInput').value;
+	let entryInput = document.getElementById('entryInput')
+	let entry = entryInput.value;
 
-	if (!ValidateInput(entry)) return undefined;
+	if (!ValidateInput(entry)) {
+		entryInput.classList.add('error')
+		return undefined
+	};
+	
+	entryInput.classList.remove('error')
 
 	let result = binary2decimal(entry);
 	let exit = document.getElementById('exit');
